@@ -1,5 +1,6 @@
-import my_module
+from my_module import generate_full_name,two_sum
 
 if __name__ == "__main__":
-  print(my_module.generate_full_name("Shyamanth","Reddy"))
+  print(generate_full_name("shyamanth","reddy"))
+  print(two_sum(12,21))
   
