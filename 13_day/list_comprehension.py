@@ -41,3 +41,8 @@ print(num_squar)
 odd_num = [num for num in range(21) if num % 2 != 0]
 print(odd_num)
 
+
+numbers = [-8, -7, -3, -1, 0, 1, 3, 4, 5, 7, 6, 8, 10]
+
+positive_even_num = [num for num in numbers if num % 2 == 0 and num > 0]
+print(positive_even_num)
