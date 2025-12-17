@@ -46,3 +46,37 @@ numbers = [-8, -7, -3, -1, 0, 1, 3, 4, 5, 7, 6, 8, 10]
 
 positive_even_num = [num for num in numbers if num % 2 == 0 and num > 0]
 print(positive_even_num)
+
+# flattening a 3d array
+list_of_lists = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+lst = [number for row in list_of_lists for number in row]
+print(lst)
+
+x = lambda param1,param2,param3 : param1 + param2 + param3
+print(x(1,3,4))
+
+# instead of named fn
+
+# we can use lambda  fn
+
+add_two_nums = lambda x,y : x+y
+print(add_two_nums(2,4))
+
+# self invoking lambda fn 
+print((lambda a,b : a+b)(4,5))
+
+sqaure = lambda x : x**2
+print(sqaure(23))
+
+cube = lambda x : x**3
+print(cube(23))
+
+
+# lambda function inside another function
+
+def power(x):
+  return lambda n : x**n
+
+
+print(power(2)(4))
